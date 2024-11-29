@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Http\Requests\Auth;
+namespace App\Http\Requests\GroupRequests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class UserRegisterRequest extends FormRequest
+class CreateGroupRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -22,11 +22,7 @@ class UserRegisterRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'email' =>'required|string|unique:users,email',
-            'password' => 'required|string|confirmed|min:8',
-            'user_name' => 'required|string|unique:users_users|min:4|max:24',
-            'first_name' => 'required|string',
-            'last_name' => 'required|string',
+            'name' => 'required|max:30'
         ];
     }
 }

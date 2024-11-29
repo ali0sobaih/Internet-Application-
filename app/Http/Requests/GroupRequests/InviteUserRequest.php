@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Http\Requests\Auth;
+namespace App\Http\Requests\GroupRequests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class UserRegisterRequest extends FormRequest
+class InviteUserRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -22,11 +22,18 @@ class UserRegisterRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'email' =>'required|string|unique:users,email',
-            'password' => 'required|string|confirmed|min:8',
-            'user_name' => 'required|string|unique:users_users|min:4|max:24',
-            'first_name' => 'required|string',
-            'last_name' => 'required|string',
+            'user_name' => 'required|exists:users_users,user_name',
+            'group_id' => 'required|exists:groups,id',
         ];
     }
+
+    public function messages(): array
+    {
+        return [
+            'user_name.exists' => 'The selected user does not exist.',
+            'group_id.exists' => 'The selected group does not exist.',
+        ];
+    }
+
+
 }

@@ -36,7 +36,7 @@ class UserServices
             'last_name' => $request['last_name'],
         ]);
 
-        $message = "User created Succesfully!!";
+        $message = "User created Successfully!!";
 
         $data = [
             'user' => $user ,
@@ -77,16 +77,11 @@ class UserServices
     {
         $user = Auth::user();
 
-        if (!is_null($user)) {
+        if ($user) {
+            $user->tokens()->delete();
 
-            if (Auth::check()) {
-                Auth::user()->currentAccessToken->delete();
-                $message = 'Logged out successfully!';
-                $code = 200;
-            } else {
-                $message = 'Invalid token!';
-                $code = 401;
-            }
+            $message = 'Logged out successfully!';
+            $code = 200;
         } else {
             $message = 'User not found';
             $code = 404;
@@ -94,6 +89,7 @@ class UserServices
 
         return ['user' => $user, 'message' => $message, 'code' => $code];
     }
+
 
     private function appendRolesAndPermissions($user)
     {
