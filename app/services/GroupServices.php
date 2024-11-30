@@ -3,10 +3,13 @@
 
 namespace App\services;
 
+use App\Http\Requests\GroupRequests\AcceptJoinRequestRequest;
+use App\Http\Requests\GroupRequests\DeleteGroupRequest;
 use App\Models\Group;
 use App\Models\Invitation;
 use App\Models\UserGroup;
 use App\Models\UsersUser;
+use Exception;
 use Illuminate\Support\Facades\Auth;
 
 class GroupServices{
@@ -73,6 +76,8 @@ class GroupServices{
                                         ->first();
 
         if($user_group->is_admin){
+
+
             $invitation = Invitation::query()->create([
                 'user_name' => $request['user_name'],
                 'group_id' => $request['group_id'],
@@ -99,6 +104,122 @@ class GroupServices{
             ];
         }
 
+    }
+
+    public function acceptJoinRequest(AcceptJoinRequestRequest $request): array
+    {
+        if (Auth::check()) {
+            $invitorId = Auth::id();
+            $groupId = $request->group_id;
+            $userName = $request->user_id;
+
+            $userGroup = UserGroup::where('group_id', $groupId)
+                ->where('user_id', $invitorId)
+                ->first();
+
+            if ($userGroup) {
+
+                $invitation = Invitation::where('group_id', $groupId)
+                    ->where('user_name', $userName)
+                    ->where('status', 'pending')
+                    ->first();
+
+                if ($invitation) {
+
+                    $invitation->update(['status' => 'accepted']);
+
+                    return [
+                        'data' => null,
+                        'message' => "User has been accepted into the group.",
+                        'code' => 200
+                    ];
+                }
+
+                return [
+                    'data' => null,
+                    'message' => "No pending invitation found for this user.",
+                    'code' => 404
+                ];
+            } else {
+                return [
+                    'data' => null,
+                    'message' => "You are not authorized to accept this request.",
+                    'code' => 401
+                ];
+            }
+        }
+
+        return [
+            'data' => null,
+            'message' => "The action was NOT completed successfully... the user is not registered.",
+            'code' => 404
+        ];
+    }
+
+
+    public function showInvitations():array
+    {
+        $id = Auth::id();
+        $user = UsersUser::query()->where('user_id',$id)
+            ->get()->first();
+
+        $invitations = Invitation::query()->where('user_name',$user["user_name"])
+            ->where('status',"pending")
+            ->get()->all();
+
+        if($invitations){
+            $data = [
+                'invitations' => $invitations
+            ];
+            $message = "all invitations";
+            return[
+                'data' => $data,
+                'message' => $message,
+                'code' => 200
+            ];
+        }else{
+            return[
+                'data' => null,
+                'message' => "No invitation found for this user",
+                'code' => 404
+            ];
+        }
+    }
+
+
+    public function deleteGroup(DeleteGroupRequest $request): array
+    {
+        if (Auth::check()) {
+            $groupId = $request->group_id;
+            $group = Group::findOrFail($groupId);
+
+            $userGroup = UserGroup::where('group_id', $groupId)
+                ->where('user_id', Auth::id())
+                ->first();
+
+            if ($userGroup && $userGroup->is_admin) {
+
+                $group->delete();
+
+                return [
+                    'data' => null,
+                    'message' => "The group was deleted successfully.",
+                    'code' => 200
+                ];
+            }
+
+            return [
+                'data' => null,
+                'message' => "You are not authorized to delete this group.",
+                'code' => 403
+            ];
+        }
+
+        return [
+            'data' => null,
+            'message' => "The action was NOT completed successfully... the user is not registered.",
+            'code' => 404
+        ];
     }
 
 }

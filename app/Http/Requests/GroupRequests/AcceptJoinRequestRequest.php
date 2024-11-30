@@ -4,7 +4,7 @@ namespace App\Http\Requests\GroupRequests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class CreateGroupRequest extends FormRequest
+class AcceptJoinRequestRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -21,8 +21,11 @@ class CreateGroupRequest extends FormRequest
      */
     public function rules(): array
     {
-        return [
-            'name' => 'required|max:30|unique:groups,name',
-        ];
+    return [
+        'user_name' => 'required|exists:users_users,user_name',
+        'group_id' => 'required|exists:groups,id',
+     ];
     }
 }
+
+

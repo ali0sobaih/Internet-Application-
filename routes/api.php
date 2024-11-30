@@ -41,14 +41,16 @@ Route::middleware(['auth:sanctum'])->group(function () {
 
         // GROUPS
         // *** GROUP ADMIN ***
-        Route::post('/createGroup', [GroupController::class, 'createGroup']);
+        Route::post('/createGroup', [GroupController::class, 'createGroup']); // **** you need to send the name of the group created
         Route::post('/deleteGroup', [GroupController::class, 'deleteGroup']);
         Route::post('/acceptJoinRequest', [GroupController::class, 'acceptJoinRequest']);
-        Route::post('/inviteToGroup', [GroupController::class, 'inviteToGroup']);
+        Route::post('/inviteToGroup', [GroupController::class, 'inviteToGroup']); // **** you need to send the user_name of the invited user and the group_id
 
-        // *** GROUP MEMBER ***
+        // *** GROUP MEMBER or USERS INVITED TO THE GROUP ***
         Route::post('/joinGroup', [GroupController::class, 'joinGroup']);
-        Route::post('/acceptInvitation', [GroupController::class, 'acceptInvitation']);
+        Route::post('/acceptInvitation/{id}', [GroupController::class, 'acceptInvitation']);
+        Route::get('/showInvitations', [GroupController::class, 'showInvitations']);
+
 
     });
 
