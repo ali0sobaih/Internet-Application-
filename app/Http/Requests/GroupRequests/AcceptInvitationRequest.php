@@ -22,7 +22,7 @@ class AcceptInvitationRequest extends FormRequest
     public function rules(): array
     {
         return [
-
+            'group_id' => 'int|required|exists:groups,id'
         ];
     }
 }

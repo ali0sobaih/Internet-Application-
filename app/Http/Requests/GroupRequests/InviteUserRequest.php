@@ -23,7 +23,6 @@ class InviteUserRequest extends FormRequest
     {
         return [
             'user_name' => 'required|exists:users_users,user_name',
-            'group_id' => 'required|exists:groups,id',
         ];
     }
 

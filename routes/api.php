@@ -1,6 +1,7 @@
  <?php
 
 use App\Http\Controllers\AuthController;
+ use App\Http\Controllers\FileController;
  use App\Http\Controllers\GroupController;
  use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -31,32 +32,42 @@ Route::post('/login', [AuthController::class, 'login']);
 Route::middleware(['auth:sanctum'])->group(function () {
 
     Route::post('/logout', [AuthController::class, 'logout']);
-});
 
+    // GROUPS AND FILES
+    Route::post('/groups/createGroup', [GroupController::class, 'createGroup']);
+});
 
 
 //  // *** USERS ROUTES ***
 
     Route::middleware(['auth:sanctum','user'])->group(function () {
 
-        // GROUPS
-        // *** GROUP ADMIN ***
-        Route::post('/createGroup', [GroupController::class, 'createGroup']); // **** you need to send the name of the group created
-        Route::post('/deleteGroup', [GroupController::class, 'deleteGroup']);
-        Route::post('/acceptJoinRequest', [GroupController::class, 'acceptJoinRequest']);
-        Route::post('/inviteToGroup', [GroupController::class, 'inviteToGroup']); // **** you need to send the user_name of the invited user and the group_id
+    //  MEMBERS
+        // OUTSIDE GROUPS ROUTES
+        Route::post('/groups/{group_id}/acceptInvitation', [GroupController::class, 'acceptInvitation']);
+        Route::post('/groups/{group_id}/rejectInvitation', [GroupController::class, 'rejectInvitation']);
+        Route::get('/groups/{group_id}/showInvitations', [GroupController::class, 'showInvitations']);
 
-        // *** GROUP MEMBER or USERS INVITED TO THE GROUP ***
-        Route::post('/joinGroup', [GroupController::class, 'joinGroup']);
-        Route::post('/acceptInvitation/{id}', [GroupController::class, 'acceptInvitation']);
-        Route::get('/showInvitations', [GroupController::class, 'showInvitations']);
+        // INSIDE GROUPS ROUTS
+        Route::middleware(['check_group_member'])->group(function () {
+        Route::post('/groups/{group_id}/addFile', [FileController::class, 'addFile']);
+        Route::get('/groups/{group_id}/showApprovedFiles', [FileController::class, 'showApprovedFiles']);
+        });
 
-
+    // ADMIN
+        Route::middleware(['check_group_admin'])->group(function () {
+        // ON GROUPS ROUTES
+        Route::post('/groups/{group_id}/deleteGroup', [GroupController::class, 'deleteGroup']);
+        Route::post('/groups/{group_id}/inviteToGroup', [GroupController::class, 'inviteToGroup']);
+        // ON Files ROUTES
+        Route::post('/groups/{group_id}/approveFile/{id}', [FileController::class, 'approveFile']);
+        Route::post('/groups/{group_id}/rejectFile/{id}', [FileController::class, 'rejectFile']);
+        Route::get('/groups/{group_id}/showPendingFiles', [FileController::class, 'showPendingFiles']);
+        });
     });
 
 
-
-//  // *** ADMIN ROUTES ***
+//  // *** SYSTEM ADMIN ROUTES ***
 
     Route::middleware(['auth:sanctum','admin'])->group(function () {
 

@@ -2,9 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\GroupRequests\AcceptJoinRequestRequest;
+use App\Http\Requests\GroupRequests\AcceptInvitationRequest;
 use App\Http\Requests\GroupRequests\CreateGroupRequest;
-use App\Http\Requests\GroupRequests\DeleteGroupRequest;
 use App\Http\Requests\GroupRequests\InviteUserRequest;
 use App\Http\Responses\Response;
 use App\services\GroupServices;
@@ -33,11 +32,11 @@ class GroupController extends Controller
         }
     }
 
-    public function inviteToGroup(InviteUserRequest $request): JsonResponse
+    public function inviteToGroup($group_id,InviteUserRequest $request): JsonResponse
     {
         $data = [];
         try{
-            $data = $this->groupServices->inviteToGroup($request);
+            $data = $this->groupServices->inviteToGroup($group_id,$request);
             return Response::Success($data['data'],$data['message'],$data['code']);
         }catch(Throwable $th){
             $message = $th->getMessage();
@@ -57,11 +56,23 @@ class GroupController extends Controller
         }
     }
 
-    public function acceptInvitation($id): JsonResponse
+    public function acceptInvitation($group_id): JsonResponse
     {
         $data = [];
         try{
-            $data = $this->groupServices->acceptInvitation($id);
+            $data = $this->groupServices->acceptInvitation($group_id);
+            return Response::Success($data['data'],$data['message'],$data['code']);
+        }catch(Throwable $th){
+            $message = $th->getMessage();
+            return Response::Error($data,$message );
+        }
+    }
+
+    public function rejectInvitation($group_id): JsonResponse
+    {
+        $data = [];
+        try{
+            $data = $this->groupServices->rejectInvitation($group_id);
             return Response::Success($data['data'],$data['message'],$data['code']);
         }catch(Throwable $th){
             $message = $th->getMessage();
@@ -70,24 +81,12 @@ class GroupController extends Controller
     }
 
 
-    public function acceptJoinRequest(AcceptJoinRequestRequest $request): JsonResponse
-    {
-        $data = [];
-        try {
-        $data = $this->groupServices->acceptJoinRequest($request);
-        return Response::Success($data['data'], $data['message'], $data['code']);
-    } catch (Throwable $th) {
-         $message = $th->getMessage();
-         return Response::Error($data, $message);
-        }
-    }
-
-    public function deleteGroup(DeleteGroupRequest $request): JsonResponse
+    public function deleteGroup($group_id): JsonResponse
     {
     $data = [];
     try {
 
-        $data = $this->groupServices->deleteGroup($request);
+        $data = $this->groupServices->deleteGroup($group_id);
         return Response::Success($data['data'], $data['message'], $data['code']);
 
     } catch (Throwable $th) {

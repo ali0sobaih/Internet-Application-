@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Http\Requests\GroupRequests;
+namespace App\Http\Requests\FileRequests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class AcceptJoinRequestRequest extends FormRequest
+class AddFileRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -21,11 +21,9 @@ class AcceptJoinRequestRequest extends FormRequest
      */
     public function rules(): array
     {
-    return [
-        'user_name' => 'required|exists:users_users,user_name',
-        'group_id' => 'required|exists:groups,id',
-     ];
+        return [
+            'name' => 'required|max:255',
+            'file' => 'file|required'
+        ];
     }
 }
-
-

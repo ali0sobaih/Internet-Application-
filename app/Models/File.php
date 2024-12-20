@@ -14,7 +14,8 @@ class File extends Model
         'group_id',
         'path',
         'status',
-        'author'
+        'author',
+        'approved'
     ];
 
     public function group()

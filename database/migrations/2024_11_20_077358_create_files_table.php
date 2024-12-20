@@ -20,8 +20,10 @@ return new class extends Migration
             $table->string('status');
             $table->string('author');
             $table->timestamps();
+
         });
     }
+
 
     /**
      * Reverse the migrations.

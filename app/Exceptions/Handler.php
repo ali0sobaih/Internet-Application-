@@ -8,23 +8,28 @@ use Throwable;
 class Handler extends ExceptionHandler
 {
     /**
-     * The list of the inputs that are never flashed to the session on validation exceptions.
+     * A list of exception types with custom render methods.
      *
-     * @var array<int, string>
+     * @var array
      */
-    protected $dontFlash = [
-        'current_password',
-        'password',
-        'password_confirmation',
+    protected $dontReport = [
+        MembershipException::class,
+        AdminException::class,
     ];
 
     /**
      * Register the exception handling callbacks for the application.
+     *
+     * @return void
      */
-    public function register(): void
+    public function register()
     {
-        $this->reportable(function (Throwable $e) {
-            //
+        $this->renderable(function (MembershipException $e, $request) {
+            return $e->render();
+        });
+
+        $this->renderable(function (AdminException $e, $request) {
+            return $e->render();
         });
     }
 }
