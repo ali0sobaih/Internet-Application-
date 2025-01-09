@@ -27,7 +27,7 @@ class checkInRequest extends FormRequest
         return [
             'files' => 'required|array',
             'files.*.file_id' => 'required|integer|min:1',
-            'files.*.version' => 'required|integer|min:1|max:1000',
+            'files.*.version' => 'required|integer|min:1',
         ];
     }
 

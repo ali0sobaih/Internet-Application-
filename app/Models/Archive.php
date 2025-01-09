@@ -13,6 +13,7 @@ class Archive extends Model
         'file_id',
         'version',
         'date',
+        'operation',
     ];
 
 

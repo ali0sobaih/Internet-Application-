@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\FileRequests\AddFileRequest;
 use App\Http\Requests\FileRequests\checkInRequest;
+use App\Http\Requests\FileRequests\checkOutRequest;
 use App\Http\Responses\Response;
 use App\services\FileServices;
 use Illuminate\Http\JsonResponse;
@@ -83,11 +84,37 @@ class FileController extends Controller
     {
         $data = [];
         try{
-            $data = $this->fileServices->checkIn($request);
+            $files = $request->input('files');
+            $data = $this->fileServices->checkIn($files);
             return Response::Success($data['data'],$data['message'],$data['code']);
         }catch(Throwable $th){
             $message = $th->getMessage();
             return Response::Error($data,$message);
         }
     }
+
+    public function checkOut(checkOutRequest $request): JsonResponse
+    {
+        $data = [];
+        try {
+            $data = $this->fileServices->checkOut($request);
+            return Response::Success($data['data'], $data['message'], $data['code']);
+        } catch (Throwable $th) {
+            $message = $th->getMessage();
+            return Response::Error($data, $message);
+        }
+    }
+
+    public function viewVersions($fileId): JsonResponse
+    {
+        $data = [];
+        try {
+            $data = $this->fileServices->viewVersions($fileId);
+            return Response::Success($data['data'], $data['message'], $data['code']);
+        } catch (Throwable $th) {
+            $message = $th->getMessage();
+            return Response::Error($data, $message);
+        }
+    }
+
 }

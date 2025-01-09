@@ -1,8 +1,11 @@
  <?php
 
-use App\Http\Controllers\AuthController;
+ use App\Http\Controllers\AdminsUserController;
+ use App\Http\Controllers\AuthController;
  use App\Http\Controllers\FileController;
  use App\Http\Controllers\GroupController;
+ use App\Http\Controllers\UserGroupController;
+ use App\Http\Controllers\UsersUserController;
  use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -47,11 +50,16 @@ Route::middleware(['auth:sanctum'])->group(function () {
         Route::post('/groups/{group_id}/acceptInvitation', [GroupController::class, 'acceptInvitation']);
         Route::post('/groups/{group_id}/rejectInvitation', [GroupController::class, 'rejectInvitation']);
         Route::get('/groups/{group_id}/showInvitations', [GroupController::class, 'showInvitations']);
+        Route::get('/groups/showMyGroups', [UserGroupController::class, 'showMyGroups']);
+        Route::get('/groups/showOneGroup/{group_id}', [UserGroupController::class, 'showOneGroup']);
 
         // INSIDE GROUPS ROUTS
         Route::middleware(['check_group_member'])->group(function () {
         Route::post('/groups/{group_id}/addFile', [FileController::class, 'addFile']);
         Route::get('/groups/{group_id}/showApprovedFiles', [FileController::class, 'showApprovedFiles']);
+        Route::post('/groups/{group_id}/checkIn', [FileController::class, 'checkIn']);
+        Route::post('/groups/{group_id}/checkOut', [FileController::class, 'checkOut']);
+        Route::get('/groups/{group_id}/viewVersions/{fileId}', [FileController::class, 'viewVersions']);
         });
 
     // ADMIN
@@ -70,6 +78,10 @@ Route::middleware(['auth:sanctum'])->group(function () {
 //  // *** SYSTEM ADMIN ROUTES ***
 
     Route::middleware(['auth:sanctum','admin'])->group(function () {
+
+        Route::get('admins/showAllUsers', [AdminsUserController::class, 'showAllUsers']);
+        Route::get('admins/showAllGroups', [AdminsUserController::class, 'showAllGroups']);
+        Route::get('admins/showArchive', [AdminsUserController::class, 'showArchive']);
 
 
     });
