@@ -3,9 +3,11 @@
 namespace App\Models;
 
 // use Illuminate\Contracts\Auth\MustVerifyEmail;
+use App\Exceptions\AdminException;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
+use Illuminate\Support\Facades\Auth;
 use Laravel\Sanctum\HasApiTokens;
 use Spatie\Permission\Traits\HasRoles;
 
@@ -54,4 +56,55 @@ class User extends Authenticatable
     {
         return $this->hasOne(AdminsUser::class);
     }
+
+    public function isAdmin():bool
+    {
+        return $this->hasRole('admin');
+    }
+
+    public function isUser($group):bool
+    {
+        $user_id = Auth::user()->id ;
+        $user = User::find($user_id);
+        if (Auth::check() &&  $user->hasRole('user')){
+            return true;
+        }else{
+            return false;
+        }
+    }
+
+    public function isAdminGroup($group):bool
+    {
+        $user_id = Auth::id();
+
+        $user_group = UserGroup::query()
+            ->where('group_id', $group)
+            ->where('user_id', $user_id)
+            ->first();
+
+        if ($user_group && $user_group->is_admin) {
+            return true;
+        }else{
+            return false;
+        }
+
+    }
+
+    public function isUserGroup($group):bool
+    {
+        $user_id = Auth::id();
+
+        $user_group = UserGroup::query()
+            ->where('group_id', $group)
+            ->where('user_id', $user_id)
+            ->first();
+
+        if ($user_group) {
+            return true;
+        }else{
+            return false;
+        }
+
+    }
+
 }

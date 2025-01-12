@@ -24,15 +24,15 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 
 // *** ROUTES WITHOUT TOKEN ***
-
+ Route::middleware(['loggingAspect'])->group(function () {
 Route::post('/register', [AuthController::class, 'register']);
 Route::post('/login', [AuthController::class, 'login']);
-
+ });
 
 
 // *** ROUTES THAT NEED A TOKEN ***
 
-Route::middleware(['auth:sanctum'])->group(function () {
+Route::middleware(['auth:sanctum','loggingAspect'])->group(function () {
 
     Route::post('/logout', [AuthController::class, 'logout']);
 
@@ -43,7 +43,7 @@ Route::middleware(['auth:sanctum'])->group(function () {
 
 //  // *** USERS ROUTES ***
 
-    Route::middleware(['auth:sanctum','user'])->group(function () {
+    Route::middleware(['auth:sanctum','AuthAspect:user','loggingAspect'])->group(function () {
 
     //  MEMBERS
         // OUTSIDE GROUPS ROUTES
@@ -53,8 +53,9 @@ Route::middleware(['auth:sanctum'])->group(function () {
         Route::get('/groups/showMyGroups', [UserGroupController::class, 'showMyGroups']);
         Route::get('/groups/showOneGroup/{group_id}', [UserGroupController::class, 'showOneGroup']);
 
+
         // INSIDE GROUPS ROUTS
-        Route::middleware(['check_group_member'])->group(function () {
+        Route::middleware(['AuthAspect:userGroup'])->group(function () {
         Route::post('/groups/{group_id}/addFile', [FileController::class, 'addFile']);
         Route::get('/groups/{group_id}/showApprovedFiles', [FileController::class, 'showApprovedFiles']);
         Route::post('/groups/{group_id}/checkIn', [FileController::class, 'checkIn']);
@@ -63,7 +64,7 @@ Route::middleware(['auth:sanctum'])->group(function () {
         });
 
     // ADMIN
-        Route::middleware(['check_group_admin'])->group(function () {
+        Route::middleware(['AuthAspect:adminGroup'])->group(function () {
         // ON GROUPS ROUTES
         Route::post('/groups/{group_id}/deleteGroup', [GroupController::class, 'deleteGroup']);
         Route::post('/groups/{group_id}/inviteToGroup', [GroupController::class, 'inviteToGroup']);
@@ -77,7 +78,7 @@ Route::middleware(['auth:sanctum'])->group(function () {
 
 //  // *** SYSTEM ADMIN ROUTES ***
 
-    Route::middleware(['auth:sanctum','admin'])->group(function () {
+    Route::middleware(['auth:sanctum','AuthAspect:admin','loggingAspect'])->group(function () {
 
         Route::get('admins/showAllUsers', [AdminsUserController::class, 'showAllUsers']);
         Route::get('admins/showAllGroups', [AdminsUserController::class, 'showAllGroups']);

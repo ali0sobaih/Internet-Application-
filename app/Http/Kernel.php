@@ -69,5 +69,8 @@ class Kernel extends HttpKernel
         'user' => \App\Http\Middleware\UsersUserMiddleware::class,
         'check_group_admin' => \App\Http\Middleware\CheckAdminMiddleware::class,
         'check_group_member' => \App\Http\Middleware\CheckGroupMemberMiddleware::class,
+
+        'AuthAspect' => \App\Aspects\AuthRoleAspect::class,
+        'loggingAspect' => \App\Aspects\LoggingAspect::class
     ];
 }

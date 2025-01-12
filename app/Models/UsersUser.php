@@ -20,4 +20,9 @@ class UsersUser extends Model
     {
         return $this->belongsTo(User::class);
     }
+
+    public function usergroup()
+    {
+        return $this->hasMany(UserGroup::class);
+    }
 }
