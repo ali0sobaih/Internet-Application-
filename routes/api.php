@@ -49,7 +49,7 @@ Route::middleware(['auth:sanctum','loggingAspect'])->group(function () {
         // OUTSIDE GROUPS ROUTES
         Route::post('/groups/{group_id}/acceptInvitation', [GroupController::class, 'acceptInvitation']);
         Route::post('/groups/{group_id}/rejectInvitation', [GroupController::class, 'rejectInvitation']);
-        Route::get('/groups/{group_id}/showInvitations', [GroupController::class, 'showInvitations']);
+        Route::get('/groups/showInvitations', [GroupController::class, 'showInvitations']);
         Route::get('/groups/showMyGroups', [UserGroupController::class, 'showMyGroups']);
         Route::get('/groups/showOneGroup/{group_id}', [UserGroupController::class, 'showOneGroup']);
 

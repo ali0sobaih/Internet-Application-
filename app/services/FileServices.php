@@ -147,18 +147,16 @@ class FileServices
                               ->where('approved', 1)
                               ->get();
 
-        echo $files;
-
         if ($files -> isEmpty()) {
             return [
-                'data' => $files,
-                "message" => "All the approved files!",
+                'data' => null,
+                "message" => "No approved files found.",
                 "code" => 200
             ];
         } else {
             return [
-                'data' => null,
-                "message" => "No approved files found.",
+                'data' => $files,
+                "message" => "All the approved files!",
                 "code" => 200
             ];
         }
