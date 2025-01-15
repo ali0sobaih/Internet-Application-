@@ -53,7 +53,7 @@ class GroupServices{
         }
     }
 
-    public function inviteToGroup($group_id,$request):array
+    public function inviteToGroup($group_id, $request): array
     {
         $invitor = Auth::id();
         $userName = $request['user_name'];
@@ -69,8 +69,25 @@ class GroupServices{
             ];
         }
 
+        $existingInvitation = Invitation::query()
+            ->where('user_name', $userName)
+            ->where('group_id', $group_id)
+            ->where('status', 'pending')
+            ->first();
+
+        if ($existingInvitation) {
+            $message = "User '$userName' has already been invited to this group.";
+            return [
+                'data' => [
+                    'invitation' => $existingInvitation
+                ],
+                'message' => $message,
+                'code' => 200
+            ];
+        }
+
         $invitation = Invitation::query()->create([
-            'user_name' => $request['user_name'],
+            'user_name' => $userName,
             'group_id' => $group_id,
             'date_time' => now(),
             'status' => 'pending'
@@ -80,15 +97,14 @@ class GroupServices{
             'invitation' => $invitation
         ];
 
-        $message = "invitation completed Successfully!";
+        $message = "Invitation completed successfully!";
         return [
             'data' => $data,
             'message' => $message,
             'code' => 200
         ];
-
-
     }
+
 
 
     public function showInvitations():array
@@ -183,7 +199,8 @@ class GroupServices{
         }
     }
 
-    public function rejectInvitation($group_id){
+    public function rejectInvitation($group_id):array
+     {
         $user_id = Auth::id();
         $user_users = UsersUser::query()->where('user_id',$user_id)->first();
         $user_name = $user_users['user_name'];
@@ -191,17 +208,20 @@ class GroupServices{
         DB::beginTransaction();
 
         try{
-            $invitation = Invitation::query()->where('user_name',$user_name)
+            Invitation::query()->where('user_name',$user_name)
                 ->where('group_id',$group_id)
                 ->update([
                     'status' => 'rejected'
                 ]);
 
+            $invitationData = Invitation::query()->where('user_name',$user_name)
+                ->where('group_id',$group_id)->get();
+
 
             $message = "Invitation rejected successfully";
 
             $data = [
-                'invitation data' => $invitation
+                'invitation data' => $invitationData
             ];
             DB::commit();
 

@@ -23,7 +23,7 @@ class FileServices
     public function addFile($group_id,$request):array
     {
         $randomString = Str::random(10);
-        $fileName = $randomString . 'V' . 1 . '.' . $request['file']->getClientOriginalExtension();
+        $fileName = $request['name'] . 'V' . 1 . '.' . $request['file']->getClientOriginalExtension();
         Storage::putFileAs('public', $request['file'], $fileName);
 
 
@@ -80,11 +80,20 @@ class FileServices
     public function approveFile($group_id, $id): array
     {
         $file = File::query()->where('id', $id)->first();
+
         if (!$file) {
             return [
                 'data' => null,
                 'message' => "File not found!",
                 'code' => 404
+            ];
+        }
+
+        if ($file->approved != '0') {
+            return [
+                'data' => null,
+                'message' => "The file has already been processed (approved or rejected).",
+                'code' => 200
             ];
         }
 
@@ -98,14 +107,24 @@ class FileServices
     }
 
 
-    public function rejectFile($group_id,$id): array
+
+    public function rejectFile($group_id, $id): array
     {
         $file = File::query()->where('id', $id)->first();
+
         if (!$file) {
             return [
                 'data' => null,
                 'message' => "File not found!",
                 'code' => 404
+            ];
+        }
+
+        if ($file->approved != 0) {
+            return [
+                'data' => null,
+                'message' => "The file has already been processed (approved or rejected).",
+                'code' => 200
             ];
         }
 
@@ -117,6 +136,7 @@ class FileServices
             'code' => 200
         ];
     }
+
 
 
     public function showPendingFiles($group_id): array
@@ -182,7 +202,7 @@ class FileServices
             $paths = [];
             foreach ($availableFiles as $file) {
                 $fileVersion = $files[array_search($file->id, $fileIds)]['version'];
-                $paths[] = $file->path . 'V' . $fileVersion . '.txt';
+                $paths[] = $file->name . 'V' . $fileVersion . '.txt';
             }
 
             foreach ($fileIds as $fileId) {
@@ -312,10 +332,30 @@ class FileServices
         try {
             DB::beginTransaction();
 
-
-            $file = $request->file;
             $file_id = $request->file_id;
 
+            $file = File::where('id', $file_id)->first();
+
+            if (!$file || $file->status !== 'reserved') {
+                return [
+                    'data' => null,
+                    'message' => 'File cannot be checked out. It is not in reserved status.',
+                    'code' => 400,
+                ];
+            }
+
+            $uploadedFile = $request->file;
+            $uploadedFileName = pathinfo($uploadedFile->getClientOriginalName(), PATHINFO_FILENAME);
+            $uploadedFileExtension = $uploadedFile->getClientOriginalExtension();
+            $expectedFileName = pathinfo($file->name, PATHINFO_FILENAME);
+
+            if ($uploadedFileName !== $expectedFileName || strtolower($uploadedFileExtension) !== 'txt') {
+                return [
+                    'data' => null,
+                    'message' => 'Uploaded file name or extension is invalid. the name and extension should be the same as when you checked in on this file!',
+                    'code' => 400,
+                ];
+            }
 
             File::where('id', $file_id)->update(['status' => 'available']);
 
@@ -338,15 +378,9 @@ class FileServices
                 'user_id' => Auth::id(),
             ]);
 
-            // Find the file path
-            $filePath = File::query()->where('id', $file_id)->first();
+            $newFileName = pathinfo($file->name, PATHINFO_FILENAME) . 'V' . $newVersion . '.' . $uploadedFileExtension;
 
-            // Construct the new file name
-            $baseName = pathinfo($filePath->name, PATHINFO_FILENAME); // Original name without extension
-            $extension = $file->getClientOriginalExtension(); // Get the file extension
-            $newFileName = $baseName . 'V' . $newVersion . '.' . $extension;
-
-            Storage::putFileAs('public', $file, $newFileName);
+            Storage::putFileAs('public', $uploadedFile, $newFileName);
 
             DB::commit();
 
@@ -361,26 +395,33 @@ class FileServices
         }
     }
 
-    public function viewVersions($fileId): array
-    {
-        $archives = Archive::query()
-            ->where('file_id', $fileId)
-            ->get();
 
-        if ($archives->isNotEmpty()) {
+
+    public function viewVersions($request): array
+    {
+        $fileId = $request->route("fileId");
+
+        $versions = Archive::query()
+            ->where('file_id', $fileId)
+            ->orderBy('version', 'desc')
+            ->distinct()
+            ->pluck('version'); // Fetch only the 'version' column
+
+        if ($versions->isNotEmpty()) {
             return [
-                'data' => $archives,
-                'message' => 'List of archive records for the file',
+                'data' => $versions,
+                'message' => 'List of versions for the file',
                 'code' => 200
             ];
         } else {
             return [
                 'data' => null,
-                'message' => 'No archive records found!',
+                'message' => 'No versions found!',
                 'code' => 404
             ];
         }
     }
+
 
 
 

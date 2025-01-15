@@ -105,11 +105,11 @@ class FileController extends Controller
         }
     }
 
-    public function viewVersions($fileId): JsonResponse
+    public function viewVersions(Request $request): JsonResponse
     {
         $data = [];
         try {
-            $data = $this->fileServices->viewVersions($fileId);
+            $data = $this->fileServices->viewVersions($request);
             return Response::Success($data['data'], $data['message'], $data['code']);
         } catch (Throwable $th) {
             $message = $th->getMessage();

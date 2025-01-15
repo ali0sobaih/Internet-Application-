@@ -58,6 +58,7 @@ class UserGroupService
 
         $files = File::query()
             ->where('group_id', $group_id)
+            ->where('approved',1)
             ->get();
 
         $data = [
@@ -80,4 +81,35 @@ class UserGroupService
         }
 
     }
+
+    public function showMyFiles($group_id)
+    {
+        $user_id = Auth::id();
+
+        $files = File::query()
+            ->join('archives', 'files.id', '=', 'archives.file_id')
+            ->join('editors', 'archives.id', '=', 'editors.archive_id')
+            ->where('files.group_id', $group_id)
+            ->where('files.status', 'reserved')
+            ->where('archives.operation', 'checkIn')
+            ->where('editors.user_id', $user_id)
+            ->select('files.*')
+            ->get();
+
+        if ($files->isEmpty()) {
+            return [
+                'data' => null,
+                "message" => "No approved files found.",
+                "code" => 200
+            ];
+        } else {
+            return [
+                'data' => $files,
+                "message" => "All the approved files!",
+                "code" => 200
+            ];
+        }
+    }
+
+
 }

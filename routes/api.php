@@ -61,6 +61,7 @@ Route::middleware(['auth:sanctum','loggingAspect'])->group(function () {
         Route::post('/groups/{group_id}/checkIn', [FileController::class, 'checkIn']);
         Route::post('/groups/{group_id}/checkOut', [FileController::class, 'checkOut']);
         Route::get('/groups/{group_id}/viewVersions/{fileId}', [FileController::class, 'viewVersions']);
+        Route::get('/groups/showMyFiles/{group_id}', [UserGroupController::class, 'showMyFiles']);
         });
 
     // ADMIN

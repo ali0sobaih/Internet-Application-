@@ -1280,3 +1280,545 @@ Did you mean one of these?
 [2025-01-13 18:24:55] local.INFO:  After Response completed for route: api/groups/3/showApprovedFiles  
 [2025-01-13 18:25:02] local.INFO:  Before Request starting for route: api/groups/1/showApprovedFiles  
 [2025-01-13 18:25:02] local.INFO:  After Response completed for route: api/groups/1/showApprovedFiles  
+[2025-01-14 15:16:22] local.INFO:  Before Request starting for route: api/register  
+[2025-01-14 15:16:23] local.INFO:  After Response completed for route: api/register  
+[2025-01-14 15:17:38] local.INFO:  Before Request starting for route: api/groups/createGroup  
+[2025-01-14 15:17:38] local.INFO:  After Response completed for route: api/groups/createGroup  
+[2025-01-14 15:18:10] local.INFO:  Before Request starting for route: api/groups/3/inviteToGroup  
+[2025-01-14 15:18:10] local.INFO:  After Response completed for route: api/groups/3/inviteToGroup  
+[2025-01-14 15:18:45] local.INFO:  Before Request starting for route: api/groups/5/inviteToGroup  
+[2025-01-14 15:18:46] local.INFO:  After Response completed for route: api/groups/5/inviteToGroup  
+[2025-01-14 15:20:11] local.INFO:  Before Request starting for route: api/groups/showInvitations  
+[2025-01-14 15:20:11] local.INFO:  After Response completed for route: api/groups/showInvitations  
+[2025-01-14 15:20:46] local.INFO:  Before Request starting for route: api/groups/5/rejectInvitation  
+[2025-01-14 15:20:46] local.INFO:  After Response completed for route: api/groups/5/rejectInvitation  
+[2025-01-14 15:21:02] local.INFO:  Before Request starting for route: api/groups/showInvitations  
+[2025-01-14 15:21:02] local.INFO:  After Response completed for route: api/groups/showInvitations  
+[2025-01-14 15:24:22] local.INFO:  Before Request starting for route: api/groups/5/rejectInvitation  
+[2025-01-14 15:24:22] local.INFO:  After Response completed for route: api/groups/5/rejectInvitation  
+[2025-01-14 15:25:14] local.INFO:  Before Request starting for route: api/groups/5/rejectInvitation  
+[2025-01-14 15:25:14] local.INFO:  After Response completed for route: api/groups/5/rejectInvitation  
+[2025-01-14 15:58:55] local.INFO:  Before Request starting for route: api/groups/5/rejectInvitation  
+[2025-01-14 15:58:55] local.INFO:  After Response completed for route: api/groups/5/rejectInvitation  
+[2025-01-14 15:59:33] local.INFO:  Before Request starting for route: api/groups/5/inviteToGroup  
+[2025-01-14 15:59:34] local.INFO:  After Response completed for route: api/groups/5/inviteToGroup  
+[2025-01-14 16:00:00] local.INFO:  Before Request starting for route: api/groups/5/rejectInvitation  
+[2025-01-14 16:00:00] local.INFO:  After Response completed for route: api/groups/5/rejectInvitation  
+[2025-01-14 16:03:18] local.INFO:  Before Request starting for route: api/groups/showInvitations  
+[2025-01-14 16:03:18] local.INFO:  After Response completed for route: api/groups/showInvitations  
+[2025-01-14 16:03:30] local.INFO:  Before Request starting for route: api/groups/showInvitations  
+[2025-01-14 16:03:30] local.INFO:  After Response completed for route: api/groups/showInvitations  
+[2025-01-14 16:09:06] local.INFO:  Before Request starting for route: api/groups/showInvitations  
+[2025-01-14 16:09:06] local.INFO:  After Response completed for route: api/groups/showInvitations  
+[2025-01-14 16:09:18] local.INFO:  Before Request starting for route: api/groups/5/rejectInvitation  
+[2025-01-14 16:09:18] local.INFO:  After Response completed for route: api/groups/5/rejectInvitation  
+[2025-01-14 16:13:05] local.INFO:  Before Request starting for route: api/groups/5/acceptInvitation  
+[2025-01-14 16:13:05] local.INFO:  After Response completed for route: api/groups/5/acceptInvitation  
+[2025-01-14 16:23:02] local.INFO:  Before Request starting for route: api/groups/5/acceptInvitation  
+[2025-01-14 16:23:02] local.INFO:  After Response completed for route: api/groups/5/acceptInvitation  
+[2025-01-14 16:23:06] local.INFO:  Before Request starting for route: api/groups/5/acceptInvitation  
+[2025-01-14 16:23:06] local.INFO:  After Response completed for route: api/groups/5/acceptInvitation  
+[2025-01-14 16:23:51] local.INFO:  Before Request starting for route: api/groups/5/rejectInvitation  
+[2025-01-14 16:23:51] local.INFO:  After Response completed for route: api/groups/5/rejectInvitation  
+[2025-01-14 16:24:12] local.INFO:  Before Request starting for route: api/groups/5/inviteToGroup  
+[2025-01-14 16:24:12] local.INFO:  After Response completed for route: api/groups/5/inviteToGroup  
+[2025-01-14 16:24:17] local.INFO:  Before Request starting for route: api/groups/5/inviteToGroup  
+[2025-01-14 16:24:17] local.INFO:  After Response completed for route: api/groups/5/inviteToGroup  
+[2025-01-14 16:24:32] local.INFO:  Before Request starting for route: api/groups/showInvitations  
+[2025-01-14 16:24:32] local.INFO:  After Response completed for route: api/groups/showInvitations  
+[2025-01-14 16:24:41] local.INFO:  Before Request starting for route: api/groups/5/rejectInvitation  
+[2025-01-14 16:24:41] local.INFO:  After Response completed for route: api/groups/5/rejectInvitation  
+[2025-01-14 16:24:51] local.INFO:  Before Request starting for route: api/groups/5/acceptInvitation  
+[2025-01-14 16:24:51] local.INFO:  After Response completed for route: api/groups/5/acceptInvitation  
+[2025-01-14 16:31:40] local.INFO:  Before Request starting for route: api/groups/showMyGroups  
+[2025-01-14 16:31:40] local.INFO:  After Response completed for route: api/groups/showMyGroups  
+[2025-01-14 16:32:01] local.INFO:  Before Request starting for route: api/groups/showOneGroup/5  
+[2025-01-14 16:32:01] local.INFO:  After Response completed for route: api/groups/showOneGroup/5  
+[2025-01-14 16:32:29] local.INFO:  Before Request starting for route: api/groups/5/addFile  
+[2025-01-14 16:32:31] local.INFO:  After Response completed for route: api/groups/5/addFile  
+[2025-01-14 16:32:43] local.INFO:  Before Request starting for route: api/groups/showOneGroup/5  
+[2025-01-14 16:32:43] local.INFO:  After Response completed for route: api/groups/showOneGroup/5  
+[2025-01-14 16:33:07] local.INFO:  Before Request starting for route: api/groups/showOneGroup/5  
+[2025-01-14 16:33:07] local.INFO:  After Response completed for route: api/groups/showOneGroup/5  
+[2025-01-14 16:33:21] local.INFO:  Before Request starting for route: api/groups/5/addFile  
+[2025-01-14 16:33:22] local.INFO:  After Response completed for route: api/groups/5/addFile  
+[2025-01-14 16:33:43] local.INFO:  Before Request starting for route: api/groups/showOneGroup/5  
+[2025-01-14 16:33:43] local.INFO:  After Response completed for route: api/groups/showOneGroup/5  
+[2025-01-14 16:35:24] local.INFO:  Before Request starting for route: api/groups/showOneGroup/5  
+[2025-01-14 16:35:24] local.INFO:  After Response completed for route: api/groups/showOneGroup/5  
+[2025-01-14 16:35:59] local.INFO:  Before Request starting for route: api/groups/5/approveFile/42  
+[2025-01-14 16:35:59] local.INFO:  After Response completed for route: api/groups/5/approveFile/42  
+[2025-01-14 16:36:20] local.INFO:  Before Request starting for route: api/groups/5/approveFile/42  
+[2025-01-14 16:36:20] local.INFO:  After Response completed for route: api/groups/5/approveFile/42  
+[2025-01-14 16:36:29] local.INFO:  Before Request starting for route: api/groups/1/showApprovedFiles  
+[2025-01-14 16:36:29] local.INFO:  After Response completed for route: api/groups/1/showApprovedFiles  
+[2025-01-14 16:36:43] local.INFO:  Before Request starting for route: api/groups/5/showApprovedFiles  
+[2025-01-14 16:36:43] local.INFO:  After Response completed for route: api/groups/5/showApprovedFiles  
+[2025-01-14 16:36:51] local.INFO:  Before Request starting for route: api/groups/5/showApprovedFiles  
+[2025-01-14 16:36:51] local.INFO:  After Response completed for route: api/groups/5/showApprovedFiles  
+[2025-01-14 16:37:18] local.INFO:  Before Request starting for route: api/groups/1/rejectFile/42  
+[2025-01-14 16:37:18] local.INFO:  After Response completed for route: api/groups/1/rejectFile/42  
+[2025-01-14 16:37:25] local.INFO:  Before Request starting for route: api/groups/5/rejectFile/42  
+[2025-01-14 16:37:25] local.INFO:  After Response completed for route: api/groups/5/rejectFile/42  
+[2025-01-14 16:38:06] local.INFO:  Before Request starting for route: api/groups/5/showApprovedFiles  
+[2025-01-14 16:38:06] local.INFO:  After Response completed for route: api/groups/5/showApprovedFiles  
+[2025-01-14 16:41:31] local.INFO:  Before Request starting for route: api/groups/5/showApprovedFiles  
+[2025-01-14 16:41:31] local.INFO:  After Response completed for route: api/groups/5/showApprovedFiles  
+[2025-01-14 16:41:34] local.INFO:  Before Request starting for route: api/groups/5/showApprovedFiles  
+[2025-01-14 16:41:34] local.INFO:  After Response completed for route: api/groups/5/showApprovedFiles  
+[2025-01-14 16:41:56] local.INFO:  Before Request starting for route: api/groups/5/showApprovedFiles  
+[2025-01-14 16:41:56] local.INFO:  After Response completed for route: api/groups/5/showApprovedFiles  
+[2025-01-14 16:41:59] local.INFO:  Before Request starting for route: api/groups/5/showApprovedFiles  
+[2025-01-14 16:41:59] local.INFO:  After Response completed for route: api/groups/5/showApprovedFiles  
+[2025-01-14 16:42:07] local.INFO:  Before Request starting for route: api/groups/5/approveFile/42  
+[2025-01-14 16:42:07] local.INFO:  After Response completed for route: api/groups/5/approveFile/42  
+[2025-01-14 16:42:18] local.INFO:  Before Request starting for route: api/groups/5/approveFile/41  
+[2025-01-14 16:42:18] local.INFO:  After Response completed for route: api/groups/5/approveFile/41  
+[2025-01-14 16:42:24] local.INFO:  Before Request starting for route: api/groups/5/rejectFile/42  
+[2025-01-14 16:42:24] local.INFO:  After Response completed for route: api/groups/5/rejectFile/42  
+[2025-01-14 16:42:30] local.INFO:  Before Request starting for route: api/groups/5/rejectFile/41  
+[2025-01-14 16:42:30] local.INFO:  After Response completed for route: api/groups/5/rejectFile/41  
+[2025-01-14 16:43:02] local.INFO:  Before Request starting for route: api/groups/5/checkIn  
+[2025-01-14 16:43:02] local.INFO:  After Response completed for route: api/groups/5/checkIn  
+[2025-01-14 16:43:25] local.INFO:  Before Request starting for route: api/groups/5/checkIn  
+[2025-01-14 16:43:25] local.INFO:  After Response completed for route: api/groups/5/checkIn  
+[2025-01-14 16:43:45] local.INFO:  Before Request starting for route: api/groups/5/checkOut  
+[2025-01-14 16:43:46] local.INFO:  After Response completed for route: api/groups/5/checkOut  
+[2025-01-14 17:21:11] local.INFO:  Before Request starting for route: api/groups/2/viewVersions/30  
+[2025-01-14 17:21:11] local.INFO:  After Response completed for route: api/groups/2/viewVersions/30  
+[2025-01-14 17:21:28] local.INFO:  Before Request starting for route: api/groups/5/checkOut  
+[2025-01-14 17:21:29] local.INFO:  After Response completed for route: api/groups/5/checkOut  
+[2025-01-14 17:21:45] local.INFO:  Before Request starting for route: api/groups/5/checkOut  
+[2025-01-14 17:21:45] local.INFO:  After Response completed for route: api/groups/5/checkOut  
+[2025-01-14 17:23:39] local.INFO:  Before Request starting for route: api/groups/5/showPendingFiles  
+[2025-01-14 17:23:39] local.INFO:  After Response completed for route: api/groups/5/showPendingFiles  
+[2025-01-14 17:23:55] local.INFO:  Before Request starting for route: api/groups/5/showPendingFiles  
+[2025-01-14 17:23:55] local.INFO:  After Response completed for route: api/groups/5/showPendingFiles  
+[2025-01-14 17:24:07] local.INFO:  Before Request starting for route: api/groups/5/addFile  
+[2025-01-14 17:24:07] local.INFO:  After Response completed for route: api/groups/5/addFile  
+[2025-01-14 17:24:14] local.INFO:  Before Request starting for route: api/groups/5/showPendingFiles  
+[2025-01-14 17:24:14] local.INFO:  After Response completed for route: api/groups/5/showPendingFiles  
+[2025-01-14 17:24:36] local.INFO:  Before Request starting for route: api/groups/5/viewVersions/30  
+[2025-01-14 17:24:36] local.INFO:  After Response completed for route: api/groups/5/viewVersions/30  
+[2025-01-14 17:24:48] local.INFO:  Before Request starting for route: api/groups/5/viewVersions/30  
+[2025-01-14 17:24:48] local.INFO:  After Response completed for route: api/groups/5/viewVersions/30  
+[2025-01-14 18:26:53] local.INFO:  Before Request starting for route: api/groups/5/addFile  
+[2025-01-14 18:26:53] local.INFO:  After Response completed for route: api/groups/5/addFile  
+[2025-01-14 18:26:55] local.INFO:  Before Request starting for route: api/groups/5/addFile  
+[2025-01-14 18:26:55] local.INFO:  After Response completed for route: api/groups/5/addFile  
+[2025-01-14 18:26:56] local.INFO:  Before Request starting for route: api/groups/5/addFile  
+[2025-01-14 18:26:56] local.INFO:  After Response completed for route: api/groups/5/addFile  
+[2025-01-14 18:26:58] local.INFO:  Before Request starting for route: api/groups/5/addFile  
+[2025-01-14 18:26:58] local.INFO:  After Response completed for route: api/groups/5/addFile  
+[2025-01-14 18:27:14] local.INFO:  Before Request starting for route: api/groups/5/showPendingFiles  
+[2025-01-14 18:27:14] local.INFO:  After Response completed for route: api/groups/5/showPendingFiles  
+[2025-01-14 18:27:29] local.INFO:  Before Request starting for route: api/groups/5/approveFile/44  
+[2025-01-14 18:27:29] local.INFO:  After Response completed for route: api/groups/5/approveFile/44  
+[2025-01-14 18:27:33] local.INFO:  Before Request starting for route: api/groups/5/approveFile/45  
+[2025-01-14 18:27:33] local.INFO:  After Response completed for route: api/groups/5/approveFile/45  
+[2025-01-14 18:27:38] local.INFO:  Before Request starting for route: api/groups/5/approveFile/46  
+[2025-01-14 18:27:38] local.INFO:  After Response completed for route: api/groups/5/approveFile/46  
+[2025-01-14 18:27:43] local.INFO:  Before Request starting for route: api/groups/5/approveFile/47  
+[2025-01-14 18:27:43] local.INFO:  After Response completed for route: api/groups/5/approveFile/47  
+[2025-01-14 18:27:48] local.INFO:  Before Request starting for route: api/groups/5/approveFile/48  
+[2025-01-14 18:27:48] local.INFO:  After Response completed for route: api/groups/5/approveFile/48  
+[2025-01-14 18:28:09] local.INFO:  Before Request starting for route: api/groups/5/checkIn  
+[2025-01-14 18:28:09] local.INFO:  After Response completed for route: api/groups/5/checkIn  
+[2025-01-14 18:28:18] local.INFO:  Before Request starting for route: api/groups/5/checkIn  
+[2025-01-14 18:28:18] local.INFO:  After Response completed for route: api/groups/5/checkIn  
+[2025-01-14 18:29:45] local.INFO:  Before Request starting for route: api/groups/showMyFiles/5  
+[2025-01-14 18:29:45] local.INFO:  After Response completed for route: api/groups/showMyFiles/5  
+[2025-01-14 18:33:53] local.INFO:  Before Request starting for route: api/groups/showMyFiles/5  
+[2025-01-14 18:33:53] local.INFO:  After Response completed for route: api/groups/showMyFiles/5  
+[2025-01-14 18:41:00] local.INFO:  Before Request starting for route: api/groups/showMyFiles/5  
+[2025-01-14 18:41:00] local.INFO:  After Response completed for route: api/groups/showMyFiles/5  
+[2025-01-14 18:49:15] local.INFO:  Before Request starting for route: api/groups/5/checkOut  
+[2025-01-14 18:49:16] local.INFO:  After Response completed for route: api/groups/5/checkOut  
+[2025-01-14 18:49:34] local.INFO:  Before Request starting for route: api/groups/5/checkIn  
+[2025-01-14 18:49:35] local.INFO:  After Response completed for route: api/groups/5/checkIn  
+[2025-01-14 18:49:43] local.INFO:  Before Request starting for route: api/groups/5/checkIn  
+[2025-01-14 18:49:43] local.INFO:  After Response completed for route: api/groups/5/checkIn  
+[2025-01-14 18:50:14] local.INFO:  Before Request starting for route: api/groups/5/checkOut  
+[2025-01-14 18:50:14] local.INFO:  After Response completed for route: api/groups/5/checkOut  
+[2025-01-14 18:50:33] local.INFO:  Before Request starting for route: api/groups/5/checkIn  
+[2025-01-14 18:50:33] local.INFO:  After Response completed for route: api/groups/5/checkIn  
+[2025-01-14 18:53:47] local.INFO:  Before Request starting for route: api/groups/5/checkOut  
+[2025-01-14 18:53:47] local.INFO:  After Response completed for route: api/groups/5/checkOut  
+[2025-01-14 20:23:23] local.INFO:  Before Request starting for route: api/groups/5/checkOut  
+[2025-01-14 20:23:23] local.INFO:  After Response completed for route: api/groups/5/checkOut  
+[2025-01-14 20:27:32] local.INFO:  Before Request starting for route: api/groups/5/checkIn  
+[2025-01-14 20:27:32] local.INFO:  After Response completed for route: api/groups/5/checkIn  
+[2025-01-14 20:28:25] local.INFO:  Before Request starting for route: api/groups/5/checkIn  
+[2025-01-14 20:28:25] local.INFO:  After Response completed for route: api/groups/5/checkIn  
+[2025-01-14 20:34:13] local.INFO:  Before Request starting for route: api/groups/5/checkOut  
+[2025-01-14 20:34:14] local.INFO:  After Response completed for route: api/groups/5/checkOut  
+[2025-01-15 09:22:07] local.INFO:  Before Request starting for route: api/groups/5/checkOut  
+[2025-01-15 09:22:09] local.INFO:  After Response completed for route: api/groups/5/checkOut  
+[2025-01-15 09:22:19] local.INFO:  Before Request starting for route: api/groups/5/checkIn  
+[2025-01-15 09:22:19] local.INFO:  After Response completed for route: api/groups/5/checkIn  
+[2025-01-15 09:22:25] local.INFO:  Before Request starting for route: api/groups/5/checkOut  
+[2025-01-15 09:22:26] local.INFO:  After Response completed for route: api/groups/5/checkOut  
+[2025-01-15 09:22:48] local.INFO:  Before Request starting for route: api/groups/5/checkIn  
+[2025-01-15 09:22:48] local.INFO:  After Response completed for route: api/groups/5/checkIn  
+[2025-01-15 09:28:09] local.INFO:  Before Request starting for route: api/groups/5/addFile  
+[2025-01-15 09:28:09] local.INFO:  After Response completed for route: api/groups/5/addFile  
+[2025-01-15 09:28:34] local.INFO:  Before Request starting for route: api/groups/5/addFile  
+[2025-01-15 09:28:34] local.INFO:  After Response completed for route: api/groups/5/addFile  
+[2025-01-15 09:29:02] local.INFO:  Before Request starting for route: api/groups/5/checkIn  
+[2025-01-15 09:29:02] local.INFO:  After Response completed for route: api/groups/5/checkIn  
+[2025-01-15 09:29:12] local.INFO:  Before Request starting for route: api/groups/5/checkIn  
+[2025-01-15 09:29:12] local.INFO:  After Response completed for route: api/groups/5/checkIn  
+[2025-01-15 09:30:03] local.INFO:  Before Request starting for route: api/groups/5/checkIn  
+[2025-01-15 09:30:03] local.INFO:  After Response completed for route: api/groups/5/checkIn  
+[2025-01-15 09:30:27] local.INFO:  Before Request starting for route: api/groups/showMyFiles/5  
+[2025-01-15 09:30:27] local.INFO:  After Response completed for route: api/groups/showMyFiles/5  
+[2025-01-15 09:30:45] local.INFO:  Before Request starting for route: api/groups/5/checkOut  
+[2025-01-15 09:30:45] local.INFO:  After Response completed for route: api/groups/5/checkOut  
+[2025-01-15 09:30:54] local.INFO:  Before Request starting for route: api/groups/5/checkOut  
+[2025-01-15 09:30:54] local.INFO:  After Response completed for route: api/groups/5/checkOut  
+[2025-01-15 09:31:58] local.INFO:  Before Request starting for route: api/groups/5/checkIn  
+[2025-01-15 09:31:58] local.INFO:  After Response completed for route: api/groups/5/checkIn  
+[2025-01-15 09:32:12] local.INFO:  Before Request starting for route: api/groups/5/checkOut  
+[2025-01-15 09:32:12] local.INFO:  After Response completed for route: api/groups/5/checkOut  
+[2025-01-15 09:41:49] local.INFO:  Before Request starting for route: api/groups/5/checkIn  
+[2025-01-15 09:41:49] local.INFO:  After Response completed for route: api/groups/5/checkIn  
+[2025-01-15 09:41:54] local.INFO:  Before Request starting for route: api/groups/5/checkOut  
+[2025-01-15 09:41:54] local.INFO:  After Response completed for route: api/groups/5/checkOut  
+[2025-01-15 09:43:43] local.INFO:  Before Request starting for route: api/groups/5/checkOut  
+[2025-01-15 09:43:43] local.INFO:  After Response completed for route: api/groups/5/checkOut  
+[2025-01-15 09:44:01] local.INFO:  Before Request starting for route: api/groups/5/checkIn  
+[2025-01-15 09:44:01] local.INFO:  After Response completed for route: api/groups/5/checkIn  
+[2025-01-15 09:44:03] local.INFO:  Before Request starting for route: api/groups/5/checkOut  
+[2025-01-15 09:44:04] local.INFO:  After Response completed for route: api/groups/5/checkOut  
+[2025-01-15 09:44:59] local.INFO:  Before Request starting for route: api/groups/5/checkIn  
+[2025-01-15 09:44:59] local.INFO:  After Response completed for route: api/groups/5/checkIn  
+[2025-01-15 09:45:04] local.INFO:  Before Request starting for route: api/groups/5/checkOut  
+[2025-01-15 09:45:04] local.INFO:  After Response completed for route: api/groups/5/checkOut  
+[2025-01-15 09:46:51] local.INFO:  Before Request starting for route: api/groups/5/checkOut  
+[2025-01-15 09:46:51] local.INFO:  After Response completed for route: api/groups/5/checkOut  
+[2025-01-15 09:46:57] local.INFO:  Before Request starting for route: api/groups/5/checkIn  
+[2025-01-15 09:46:57] local.INFO:  After Response completed for route: api/groups/5/checkIn  
+[2025-01-15 09:47:00] local.INFO:  Before Request starting for route: api/groups/5/checkOut  
+[2025-01-15 09:47:00] local.INFO:  After Response completed for route: api/groups/5/checkOut  
+[2025-01-15 09:49:13] local.INFO:  Before Request starting for route: api/groups/5/checkOut  
+[2025-01-15 09:49:13] local.INFO:  After Response completed for route: api/groups/5/checkOut  
+[2025-01-15 09:49:17] local.INFO:  Before Request starting for route: api/groups/5/checkOut  
+[2025-01-15 09:49:17] local.INFO:  After Response completed for route: api/groups/5/checkOut  
+[2025-01-15 09:49:50] local.INFO:  Before Request starting for route: api/groups/5/checkIn  
+[2025-01-15 09:49:50] local.INFO:  After Response completed for route: api/groups/5/checkIn  
+[2025-01-15 09:49:57] local.INFO:  Before Request starting for route: api/groups/5/checkIn  
+[2025-01-15 09:49:57] local.INFO:  After Response completed for route: api/groups/5/checkIn  
+[2025-01-15 09:51:09] local.INFO:  Before Request starting for route: api/groups/5/checkIn  
+[2025-01-15 09:51:09] local.INFO:  After Response completed for route: api/groups/5/checkIn  
+[2025-01-15 09:51:35] local.INFO:  Before Request starting for route: api/groups/5/viewVersions/49  
+[2025-01-15 09:51:35] local.INFO:  After Response completed for route: api/groups/5/viewVersions/49  
+[2025-01-15 09:55:06] local.INFO:  Before Request starting for route: api/groups/5/viewVersions/49  
+[2025-01-15 09:55:06] local.INFO:  After Response completed for route: api/groups/5/viewVersions/49  
+[2025-01-15 09:56:45] local.INFO:  Before Request starting for route: api/groups/49/viewVersions/49  
+[2025-01-15 09:56:45] local.INFO:  After Response completed for route: api/groups/49/viewVersions/49  
+[2025-01-15 09:56:54] local.INFO:  Before Request starting for route: api/groups/5/viewVersions/49  
+[2025-01-15 09:56:54] local.INFO:  After Response completed for route: api/groups/5/viewVersions/49  
+[2025-01-15 09:59:11] local.INFO:  Before Request starting for route: api/groups/5/viewVersions/49  
+[2025-01-15 09:59:11] local.INFO:  After Response completed for route: api/groups/5/viewVersions/49  
+[2025-01-15 10:01:06] local.INFO:  Before Request starting for route: api/groups/5/viewVersions/49  
+[2025-01-15 10:01:06] local.INFO:  After Response completed for route: api/groups/5/viewVersions/49  
+[2025-01-15 10:07:35] local.INFO:  Before Request starting for route: api/groups/5/viewVersions/49  
+[2025-01-15 10:07:35] local.INFO:  After Response completed for route: api/groups/5/viewVersions/49  
+[2025-01-15 10:08:19] local.INFO:  Before Request starting for route: api/groups/5/viewVersions/49  
+[2025-01-15 10:08:19] local.INFO:  After Response completed for route: api/groups/5/viewVersions/49  
+[2025-01-15 10:10:04] local.INFO:  Before Request starting for route: api/groups/5/viewVersions/49  
+[2025-01-15 10:10:04] local.INFO:  After Response completed for route: api/groups/5/viewVersions/49  
+[2025-01-15 10:21:19] local.ERROR: Route [login] not defined. {"exception":"[object] (Symfony\\Component\\Routing\\Exception\\RouteNotFoundException(code: 0): Route [login] not defined. at C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\UrlGenerator.php:477)
+[stacktrace]
+#0 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(811): Illuminate\\Routing\\UrlGenerator->route('login', Array, true)
+#1 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\app\\Http\\Middleware\\Authenticate.php(15): route('login')
+#2 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Auth\\Middleware\\Authenticate.php(96): App\\Http\\Middleware\\Authenticate->redirectTo(Object(Illuminate\\Http\\Request))
+#3 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Auth\\Middleware\\Authenticate.php(81): Illuminate\\Auth\\Middleware\\Authenticate->unauthenticated(Object(Illuminate\\Http\\Request), Array)
+#4 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Auth\\Middleware\\Authenticate.php(55): Illuminate\\Auth\\Middleware\\Authenticate->authenticate(Object(Illuminate\\Http\\Request), Array)
+#5 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Auth\\Middleware\\Authenticate->handle(Object(Illuminate\\Http\\Request), Object(Closure), 'sanctum')
+#6 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#7 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(807): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#8 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(784): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#9 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(748): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#10 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(737): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#11 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(200): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#12 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(144): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#13 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#14 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#15 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#16 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#17 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#18 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#19 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#20 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#21 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(99): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#22 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#23 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(62): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#24 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#25 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#26 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#27 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#28 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#29 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#30 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#31 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\Users\\\\Lenovo...')
+#32 {main}
+"} 
+[2025-01-15 10:51:33] local.ERROR: Route [login] not defined. {"exception":"[object] (Symfony\\Component\\Routing\\Exception\\RouteNotFoundException(code: 0): Route [login] not defined. at C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\UrlGenerator.php:477)
+[stacktrace]
+#0 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(811): Illuminate\\Routing\\UrlGenerator->route('login', Array, true)
+#1 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\app\\Http\\Middleware\\Authenticate.php(15): route('login')
+#2 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Auth\\Middleware\\Authenticate.php(96): App\\Http\\Middleware\\Authenticate->redirectTo(Object(Illuminate\\Http\\Request))
+#3 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Auth\\Middleware\\Authenticate.php(81): Illuminate\\Auth\\Middleware\\Authenticate->unauthenticated(Object(Illuminate\\Http\\Request), Array)
+#4 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Auth\\Middleware\\Authenticate.php(55): Illuminate\\Auth\\Middleware\\Authenticate->authenticate(Object(Illuminate\\Http\\Request), Array)
+#5 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Auth\\Middleware\\Authenticate->handle(Object(Illuminate\\Http\\Request), Object(Closure), 'sanctum')
+#6 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#7 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(807): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#8 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(784): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#9 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(748): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#10 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(737): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#11 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(200): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#12 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(144): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#13 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#14 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#15 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#16 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#17 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#18 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#19 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#20 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#21 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(99): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#22 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#23 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(62): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#24 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#25 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#26 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#27 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#28 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#29 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#30 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#31 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\Users\\\\Lenovo...')
+#32 {main}
+"} 
+[2025-01-15 10:52:45] local.ERROR: Route [login] not defined. {"exception":"[object] (Symfony\\Component\\Routing\\Exception\\RouteNotFoundException(code: 0): Route [login] not defined. at C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\UrlGenerator.php:477)
+[stacktrace]
+#0 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(811): Illuminate\\Routing\\UrlGenerator->route('login', Array, true)
+#1 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\app\\Http\\Middleware\\Authenticate.php(15): route('login')
+#2 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Auth\\Middleware\\Authenticate.php(96): App\\Http\\Middleware\\Authenticate->redirectTo(Object(Illuminate\\Http\\Request))
+#3 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Auth\\Middleware\\Authenticate.php(81): Illuminate\\Auth\\Middleware\\Authenticate->unauthenticated(Object(Illuminate\\Http\\Request), Array)
+#4 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Auth\\Middleware\\Authenticate.php(55): Illuminate\\Auth\\Middleware\\Authenticate->authenticate(Object(Illuminate\\Http\\Request), Array)
+#5 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Auth\\Middleware\\Authenticate->handle(Object(Illuminate\\Http\\Request), Object(Closure), 'sanctum')
+#6 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#7 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(807): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#8 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(784): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#9 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(748): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#10 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(737): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#11 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(200): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#12 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(144): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#13 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#14 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#15 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#16 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#17 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#18 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#19 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#20 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#21 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(99): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#22 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#23 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(62): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#24 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#25 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#26 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#27 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#28 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#29 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#30 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#31 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\Users\\\\Lenovo...')
+#32 {main}
+"} 
+[2025-01-15 10:52:51] local.INFO:  Before Request starting for route: api/groups/5/viewVersions/49  
+[2025-01-15 10:52:51] local.INFO:  After Response completed for route: api/groups/5/viewVersions/49  
+[2025-01-15 10:53:56] local.ERROR: Route [login] not defined. {"exception":"[object] (Symfony\\Component\\Routing\\Exception\\RouteNotFoundException(code: 0): Route [login] not defined. at C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\UrlGenerator.php:477)
+[stacktrace]
+#0 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(811): Illuminate\\Routing\\UrlGenerator->route('login', Array, true)
+#1 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\app\\Http\\Middleware\\Authenticate.php(15): route('login')
+#2 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Auth\\Middleware\\Authenticate.php(96): App\\Http\\Middleware\\Authenticate->redirectTo(Object(Illuminate\\Http\\Request))
+#3 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Auth\\Middleware\\Authenticate.php(81): Illuminate\\Auth\\Middleware\\Authenticate->unauthenticated(Object(Illuminate\\Http\\Request), Array)
+#4 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Auth\\Middleware\\Authenticate.php(55): Illuminate\\Auth\\Middleware\\Authenticate->authenticate(Object(Illuminate\\Http\\Request), Array)
+#5 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Auth\\Middleware\\Authenticate->handle(Object(Illuminate\\Http\\Request), Object(Closure), 'sanctum')
+#6 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#7 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(807): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#8 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(784): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#9 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(748): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#10 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(737): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#11 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(200): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#12 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(144): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#13 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#14 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#15 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#16 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#17 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#18 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#19 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#20 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#21 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(99): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#22 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#23 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(62): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#24 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#25 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#26 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#27 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#28 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#29 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#30 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#31 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\Users\\\\Lenovo...')
+#32 {main}
+"} 
+[2025-01-15 10:54:07] local.ERROR: Route [login] not defined. {"exception":"[object] (Symfony\\Component\\Routing\\Exception\\RouteNotFoundException(code: 0): Route [login] not defined. at C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\UrlGenerator.php:477)
+[stacktrace]
+#0 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(811): Illuminate\\Routing\\UrlGenerator->route('login', Array, true)
+#1 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\app\\Http\\Middleware\\Authenticate.php(15): route('login')
+#2 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Auth\\Middleware\\Authenticate.php(96): App\\Http\\Middleware\\Authenticate->redirectTo(Object(Illuminate\\Http\\Request))
+#3 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Auth\\Middleware\\Authenticate.php(81): Illuminate\\Auth\\Middleware\\Authenticate->unauthenticated(Object(Illuminate\\Http\\Request), Array)
+#4 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Auth\\Middleware\\Authenticate.php(55): Illuminate\\Auth\\Middleware\\Authenticate->authenticate(Object(Illuminate\\Http\\Request), Array)
+#5 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Auth\\Middleware\\Authenticate->handle(Object(Illuminate\\Http\\Request), Object(Closure), 'sanctum')
+#6 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#7 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(807): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#8 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(784): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#9 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(748): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#10 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(737): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#11 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(200): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#12 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(144): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#13 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#14 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#15 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#16 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#17 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#18 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#19 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#20 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#21 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(99): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#22 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#23 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(62): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#24 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#25 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#26 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#27 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#28 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#29 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#30 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#31 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\Users\\\\Lenovo...')
+#32 {main}
+"} 
+[2025-01-15 10:57:29] local.ERROR: Route [login] not defined. {"exception":"[object] (Symfony\\Component\\Routing\\Exception\\RouteNotFoundException(code: 0): Route [login] not defined. at C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\UrlGenerator.php:477)
+[stacktrace]
+#0 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(811): Illuminate\\Routing\\UrlGenerator->route('login', Array, true)
+#1 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\app\\Http\\Middleware\\Authenticate.php(15): route('login')
+#2 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Auth\\Middleware\\Authenticate.php(96): App\\Http\\Middleware\\Authenticate->redirectTo(Object(Illuminate\\Http\\Request))
+#3 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Auth\\Middleware\\Authenticate.php(81): Illuminate\\Auth\\Middleware\\Authenticate->unauthenticated(Object(Illuminate\\Http\\Request), Array)
+#4 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Auth\\Middleware\\Authenticate.php(55): Illuminate\\Auth\\Middleware\\Authenticate->authenticate(Object(Illuminate\\Http\\Request), Array)
+#5 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Auth\\Middleware\\Authenticate->handle(Object(Illuminate\\Http\\Request), Object(Closure), 'sanctum')
+#6 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#7 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(807): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#8 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(784): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#9 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(748): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#10 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(737): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#11 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(200): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#12 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(144): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#13 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#14 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#15 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#16 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#17 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#18 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#19 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#20 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#21 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(99): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#22 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#23 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(62): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#24 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#25 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#26 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#27 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#28 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#29 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#30 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#31 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\Users\\\\Lenovo...')
+#32 {main}
+"} 
+[2025-01-15 11:00:10] local.ERROR: Route [login] not defined. {"exception":"[object] (Symfony\\Component\\Routing\\Exception\\RouteNotFoundException(code: 0): Route [login] not defined. at C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\UrlGenerator.php:477)
+[stacktrace]
+#0 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(811): Illuminate\\Routing\\UrlGenerator->route('login', Array, true)
+#1 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\app\\Http\\Middleware\\Authenticate.php(15): route('login')
+#2 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Auth\\Middleware\\Authenticate.php(96): App\\Http\\Middleware\\Authenticate->redirectTo(Object(Illuminate\\Http\\Request))
+#3 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Auth\\Middleware\\Authenticate.php(81): Illuminate\\Auth\\Middleware\\Authenticate->unauthenticated(Object(Illuminate\\Http\\Request), Array)
+#4 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Auth\\Middleware\\Authenticate.php(55): Illuminate\\Auth\\Middleware\\Authenticate->authenticate(Object(Illuminate\\Http\\Request), Array)
+#5 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Auth\\Middleware\\Authenticate->handle(Object(Illuminate\\Http\\Request), Object(Closure), 'sanctum')
+#6 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#7 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(807): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#8 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(784): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#9 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(748): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#10 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(737): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#11 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(200): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#12 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(144): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#13 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#14 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#15 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#16 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#17 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#18 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#19 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#20 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#21 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(99): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#22 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#23 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(62): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#24 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#25 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#26 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#27 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#28 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#29 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#30 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#31 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\Users\\\\Lenovo...')
+#32 {main}
+"} 
+[2025-01-15 11:02:31] local.INFO:  Before Request starting for route: api/groups/5/viewVersions/49  
+[2025-01-15 11:02:31] local.INFO:  After Response completed for route: api/groups/5/viewVersions/49  
+[2025-01-15 11:03:57] local.ERROR: Route [login] not defined. {"exception":"[object] (Symfony\\Component\\Routing\\Exception\\RouteNotFoundException(code: 0): Route [login] not defined. at C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\UrlGenerator.php:477)
+[stacktrace]
+#0 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(811): Illuminate\\Routing\\UrlGenerator->route('login', Array, true)
+#1 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\app\\Http\\Middleware\\Authenticate.php(15): route('login')
+#2 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Auth\\Middleware\\Authenticate.php(96): App\\Http\\Middleware\\Authenticate->redirectTo(Object(Illuminate\\Http\\Request))
+#3 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Auth\\Middleware\\Authenticate.php(81): Illuminate\\Auth\\Middleware\\Authenticate->unauthenticated(Object(Illuminate\\Http\\Request), Array)
+#4 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Auth\\Middleware\\Authenticate.php(55): Illuminate\\Auth\\Middleware\\Authenticate->authenticate(Object(Illuminate\\Http\\Request), Array)
+#5 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Auth\\Middleware\\Authenticate->handle(Object(Illuminate\\Http\\Request), Object(Closure), 'sanctum')
+#6 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#7 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(807): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#8 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(784): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#9 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(748): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#10 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(737): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#11 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(200): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#12 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(144): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#13 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#14 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#15 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#16 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#17 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#18 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#19 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#20 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#21 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(99): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#22 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#23 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(62): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#24 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#25 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#26 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#27 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#28 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#29 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#30 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#31 C:\\Users\\Lenovo\\Desktop\\first simester\\Internet Application\\IA\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\Users\\\\Lenovo...')
+#32 {main}
+"} 
+[2025-01-15 11:04:22] local.INFO:  Before Request starting for route: api/groups/5/viewVersions/49  
+[2025-01-15 11:04:22] local.INFO:  After Response completed for route: api/groups/5/viewVersions/49  
