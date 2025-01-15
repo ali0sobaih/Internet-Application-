@@ -192,11 +192,13 @@ class FileServices
 
             $availableFiles = File::whereIn('id', $fileIds)
                 ->where('status', 'available')
+                ->where('approved', 1)
                 ->lockForUpdate()
                 ->get();
+            echo $availableFiles;
 
             if ($availableFiles->count() !== count($fileIds)) {
-                throw new \Exception('Not all files are available.');
+                throw new \Exception('One or more files are not available.');
             }
 
             $paths = [];

@@ -1,0 +1,4 @@
+GET http://localhost:8000/api/groups/showMyFiles/5
+Authorization: Bearer 10|YzzvXY0nFneR0FnUS6dyVfsOtLM7piybQbTSKyTI5aa1321d
+Content-Type: application/json
+Accept: application/json
