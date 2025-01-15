@@ -24,4 +24,6 @@ class Editor extends Model
     {
         return $this->belongsTo(Archive::class);
     }
+
+
 }

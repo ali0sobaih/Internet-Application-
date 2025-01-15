@@ -47,24 +47,57 @@ class AdminsUserService
         }
     }
 
-    public function showArchive():array
+    public function showArchive(): array
     {
-        $users = Archive::query()->get();
+        $archives = Archive::query()
+            ->leftJoin('editors', 'archives.id', '=', 'editors.archive_id')
+            ->select('archives.*', 'editors.id as editor_id', 'editors.user_id as editor_user_id', 'editors.created_at as editor_created_at')
+            ->get()
+            ->map(function ($archive) {
+                return [
+                    'id' => $archive->id,
+                    'file_id' => $archive->file_id,
+                    'version' => $archive->version,
+                    'date' => $archive->date,
+                    'operation' => $archive->operation,
+                    'created_at' => $archive->created_at,
+                    'updated_at' => $archive->updated_at,
+                    'editor' => [
+                        'id' => $archive->editor_id,
+                        'user_id' => $archive->editor_user_id,
+                        'created_at' => $archive->editor_created_at,
+                    ],
+                ];
+            });
 
-        if($users){
-            return[
-                'data' => $users,
-                'message' => 'all Archive records',
-                'code' => 200
+        if ($archives->isNotEmpty()) {
+            $data = [];
+            foreach ($archives as $archive) {
+                $data[] = [ // Use $data[] to append each archive to the array
+                    'Archive id' => $archive['id'],
+                    'File id' => $archive['file_id'],
+                    'Version' => $archive['version'],
+                    'Date' => $archive['date'],
+                    'Operation' => $archive['operation'],
+                    'Editor' => $archive['editor']['id'] ?? null, // Safely access editor ID
+                ];
+            }
+
+            return [
+                'data' => $data, // Return the entire $data array
+                'message' => 'All archive records with editor data',
+                'code' => 200,
             ];
-        }else{
-            return[
+        } else {
+            return [
                 'data' => null,
-                'message' => 'no Archive records',
-                'code' => 404
+                'message' => 'No archive records found',
+                'code' => 404,
             ];
         }
     }
+
+
 
 
 }

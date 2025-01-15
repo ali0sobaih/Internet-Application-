@@ -57,6 +57,12 @@ class User extends Authenticatable
         return $this->hasOne(AdminsUser::class);
     }
 
+    public function editor()
+    {
+        return $this->hasMany(Editor::class);
+    }
+
+
     public function isAdmin():bool
     {
         return $this->hasRole('admin');
@@ -64,7 +70,7 @@ class User extends Authenticatable
 
     public function isUser($group):bool
     {
-        $user_id = Auth::user()->id ;
+        $user_id = Auth::id();
         $user = User::find($user_id);
         if (Auth::check() &&  $user->hasRole('user')){
             return true;

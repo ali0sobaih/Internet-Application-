@@ -26,4 +26,6 @@ class Archive extends Model
     {
         return $this->hasOne(Editor::class);
     }
+
+
 }

@@ -49,6 +49,12 @@ class FileServices
                 'operation' => 'upload'
             ]);
 
+            Editor::query()->create([
+                'archive_id' => $archive['id'],
+                'user_id' => Auth::id()
+            ]);
+
+
             $user_group = UserGroup::query()->where('group_id',$group_id)
                 ->where('user_id', $user_id)
                 ->first();
