@@ -195,7 +195,6 @@ class FileServices
                 ->where('approved', 1)
                 ->lockForUpdate()
                 ->get();
-            echo $availableFiles;
 
             if ($availableFiles->count() !== count($fileIds)) {
                 throw new \Exception('One or more files are not available.');
