@@ -1,0 +1,5 @@
+GET http://localhost:8000/api/admins/showUpdates
+Authorization: Bearer 9|qcYhjUBHn81kUv4sPp9TX0obmKtlTaSd1VTL0hDndfc5ae05
+Content-Type: application/json
+Accept: application/json
+

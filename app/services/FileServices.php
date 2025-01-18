@@ -6,6 +6,7 @@ use App\Http\Requests\FileRequests\checkInRequest;
 use App\Models\Archive;
 use App\Models\Editor;
 use App\Models\Group;
+use App\Models\Update;
 use App\Models\UserGroup;
 use App\Models\UsersUser;
 use Faker\Core\Version;
@@ -14,15 +15,29 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
 use App\Models\File;
+use Log;
 use PharIo\Manifest\Author;
 use Throwable;
 use ZipArchive;
+use SebastianBergmann\Diff\Differ;
+use SebastianBergmann\Diff\Output\UnifiedDiffOutputBuilder;
 
 class FileServices
 {
     public function addFile($group_id,$request):array
     {
         $randomString = Str::random(10);
+
+        $isNameUnique = !File::where('name', $request['name'])->exists();
+
+        if (!$isNameUnique) {
+            return [
+                'data' => null,
+                'message' => 'File name already exists. Please choose a different name.',
+                'code' => 400,
+            ];
+        }
+
         $fileName = $request['name'] . 'V' . 1 . '.' . $request['file']->getClientOriginalExtension();
         Storage::putFileAs('public', $request['file'], $fileName);
 
@@ -333,14 +348,13 @@ class FileServices
         ];
     }*/
 
-
     public function checkOut($request): array
     {
         try {
             DB::beginTransaction();
 
+            $user_id = Auth::id();
             $file_id = $request->file_id;
-
             $file = File::where('id', $file_id)->first();
 
             if (!$file || $file->status !== 'reserved') {
@@ -359,41 +373,55 @@ class FileServices
             if ($uploadedFileName !== $expectedFileName || strtolower($uploadedFileExtension) !== 'txt') {
                 return [
                     'data' => null,
-                    'message' => 'Uploaded file name or extension is invalid. the name and extension should be the same as when you checked in on this file!',
+                    'message' => 'Uploaded file name or extension is invalid.',
                     'code' => 400,
                 ];
             }
 
             File::where('id', $file_id)->update(['status' => 'available']);
 
-            $lastVersion = Archive::query()
-                ->where('file_id', $file_id)
-                ->orderBy('version', 'desc')
-                ->first();
-
+            $lastVersion = Archive::where('file_id', $file_id)->orderBy('version', 'desc')->first();
             $newVersion = $lastVersion ? $lastVersion->version + 1 : 1;
 
-            $archive = Archive::query()->create([
+            $archive = Archive::create([
                 'file_id' => $file_id,
                 'version' => $newVersion,
                 'date' => now(),
                 'operation' => 'checkOut',
             ]);
 
-            Editor::query()->create([
+            Editor::create([
                 'archive_id' => $archive->id,
-                'user_id' => Auth::id(),
+                'user_id' => $user_id,
             ]);
 
             $newFileName = pathinfo($file->name, PATHINFO_FILENAME) . 'V' . $newVersion . '.' . $uploadedFileExtension;
-
             Storage::putFileAs('public', $uploadedFile, $newFileName);
+
+            $lastArchive = Archive::where('file_id', $archive['file_id'])
+                ->where('operation', 'checkIn')
+                ->latest('created_at')
+                ->first();
+
+            $version = $lastArchive->version;
+            $lastFileName = pathinfo($file->name, PATHINFO_FILENAME) . 'V' . $version . '.' . $uploadedFileExtension;
+
+            DB::table('update_tasks')->insert([
+                'old_file' => $lastFileName,
+                'new_file' => $newFileName,
+                'archive_id' => $archive->id,
+                'user_id' => $user_id,
+                'created_at' => now(),
+            ]);
+
+            /*$updateProcessor = new UpdateProcessor();
+            $updateProcessor->process();*/
 
             DB::commit();
 
             return [
                 'data' => null,
-                'message' => 'File checked out successfully.',
+                'message' => 'File checked out successfully',
                 'code' => 200,
             ];
         } catch (\Exception $e) {

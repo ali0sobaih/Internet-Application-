@@ -27,5 +27,10 @@ class Archive extends Model
         return $this->hasOne(Editor::class);
     }
 
+    public function updates()
+    {
+        return $this->hasOne(Update::class);
+    }
+
 
 }

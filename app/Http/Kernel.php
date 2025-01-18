@@ -2,6 +2,8 @@
 
 namespace App\Http;
 
+use App\Console\Commands\ProcessUpdateTasks;
+use App\Console\Commands\test;
 use Illuminate\Foundation\Http\Kernel as HttpKernel;
 
 class Kernel extends HttpKernel
@@ -73,4 +75,10 @@ class Kernel extends HttpKernel
         'AuthAspect' => \App\Aspects\AuthRoleAspect::class,
         'loggingAspect' => \App\Aspects\LoggingAspect::class
     ];
+
+    protected $commands = [
+        ProcessUpdateTasks::class,
+        test::class
+    ];
+
 }

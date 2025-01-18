@@ -2,6 +2,7 @@
 
  use App\Http\Controllers\AdminsUserController;
  use App\Http\Controllers\AuthController;
+ use App\Http\Controllers\ExportController;
  use App\Http\Controllers\FileController;
  use App\Http\Controllers\GroupController;
  use App\Http\Controllers\UserGroupController;
@@ -84,6 +85,8 @@ Route::middleware(['auth:sanctum','loggingAspect'])->group(function () {
         Route::get('admins/showAllUsers', [AdminsUserController::class, 'showAllUsers']);
         Route::get('admins/showAllGroups', [AdminsUserController::class, 'showAllGroups']);
         Route::get('admins/showArchive', [AdminsUserController::class, 'showArchive']);
+        Route::get('admins/export-updates', [ExportController::class, 'exportUpdates']);
+        Route::get('admins/showUpdates', [AdminsUserController::class, 'showUpdates']);
 
 
     });

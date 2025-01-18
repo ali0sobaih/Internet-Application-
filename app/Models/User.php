@@ -62,6 +62,11 @@ class User extends Authenticatable
         return $this->hasMany(Editor::class);
     }
 
+    public function updates()
+    {
+        return $this->hasMany(Update::class);
+    }
+
 
     public function isAdmin():bool
     {

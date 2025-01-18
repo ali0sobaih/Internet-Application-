@@ -4,6 +4,7 @@ namespace App\services;
 
 use App\Models\Archive;
 use App\Models\Group;
+use App\Models\Update;
 use App\Models\UserGroup;
 use App\Models\UsersUser;
 
@@ -96,6 +97,26 @@ class AdminsUserService
             ];
         }
     }
+
+    public function showUpdates():array
+    {
+        $updates = Update::query()->get()->all();
+
+        if($updates){
+            return[
+                'data' => $updates,
+                'message' => 'all UPDATES in checkouts operations in system',
+                'code' => 200
+            ];
+        }else{
+            return[
+                'data' => null,
+                'message' => 'no UPDATES in system',
+                'code' => 404
+            ];
+        }
+    }
+
 
 
 
