@@ -1,4 +1,4 @@
- <?php
+<?php
 
  use App\Http\Controllers\AdminsUserController;
  use App\Http\Controllers\AuthController;
@@ -11,7 +11,7 @@
 use Illuminate\Support\Facades\Route;
 
 /*
-|-------------------------------------------------------------------------|--------------------------------------------------------------------------
+|------------------------------------------------------------------------|-------------------------------------------------------------------------
 |
 | Here is where you can register API routes for your application. These
 | routes are loaded by the RouteServiceProvider and all of them will
@@ -77,7 +77,6 @@ Route::middleware(['auth:sanctum','loggingAspect'])->group(function () {
         });
     });
 
-
 //  // *** SYSTEM ADMIN ROUTES ***
 
     Route::middleware(['auth:sanctum','AuthAspect:admin','loggingAspect'])->group(function () {
@@ -87,7 +86,6 @@ Route::middleware(['auth:sanctum','loggingAspect'])->group(function () {
         Route::get('admins/showArchive', [AdminsUserController::class, 'showArchive']);
         Route::get('admins/export-updates', [ExportController::class, 'exportUpdates']);
         Route::get('admins/showUpdates', [AdminsUserController::class, 'showUpdates']);
-
 
     });
 

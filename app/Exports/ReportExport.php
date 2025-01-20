@@ -15,15 +15,24 @@ class ReportExport implements FromCollection, WithHeadings
      */
     public function collection()
     {
-        return DB::table('updates')->select(
-            'id',
-            'user_id',
-            'archive_id',
-            'difference',
-            'created_at',
-            'updated_at'
-        )->get();
+        try {
+            return DB::table('updates')->select(
+                'id',
+                'user_id',
+                'archive_id',
+                'difference',
+                'created_at',
+                'updated_at'
+            )->get();
+        } catch (\Exception $e) {
+            // Log the error for debugging
+            \Log::error('Error fetching updates for export', ['error' => $e->getMessage()]);
+
+            // Return an empty collection if there's an error
+            return collect([]);
+        }
     }
+
 
     /**
      * Define headings for the exported file.
