@@ -79,10 +79,10 @@ class GroupServices{
             $message = "User '$userName' has already been invited to this group.";
             return [
                 'data' => [
-                    'invitation' => $existingInvitation
+                    'existing Invitation' => $existingInvitation
                 ],
                 'message' => $message,
-                'code' => 200
+                'code' => 403
             ];
         }
 
@@ -141,8 +141,11 @@ class GroupServices{
     {
         $group = Group::query()->findOrFail($group_id);
 
+        $gu = UserGroup::query()->where('group_id',$group_id);
+
         // Admin check is handled by middleware
         $group->delete();
+        $gu->delete();
 
         return [
             'data' => null,

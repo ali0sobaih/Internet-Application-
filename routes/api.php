@@ -51,8 +51,8 @@ Route::middleware(['auth:sanctum','loggingAspect'])->group(function () {
         Route::post('/groups/{group_id}/acceptInvitation', [GroupController::class, 'acceptInvitation']);
         Route::post('/groups/{group_id}/rejectInvitation', [GroupController::class, 'rejectInvitation']);
         Route::get('/groups/showInvitations', [GroupController::class, 'showInvitations']);
-        Route::get('/groups/showMyGroups', [UserGroupController::class, 'showMyGroups']);
-        Route::get('/groups/showOneGroup/{group_id}', [UserGroupController::class, 'showOneGroup']);
+        Route::get('/groups/showMyGroups', [UserGroupController::class, 'showMyGroups']); //**
+        Route::get('/groups/showOneGroup/{group_id}', [UserGroupController::class, 'showOneGroup']);//**
 
 
         // INSIDE GROUPS ROUTS
@@ -62,7 +62,7 @@ Route::middleware(['auth:sanctum','loggingAspect'])->group(function () {
         Route::post('/groups/{group_id}/checkIn', [FileController::class, 'checkIn']);
         Route::post('/groups/{group_id}/checkOut', [FileController::class, 'checkOut']);
         Route::get('/groups/{group_id}/viewVersions/{fileId}', [FileController::class, 'viewVersions']);
-        Route::get('/groups/showMyFiles/{group_id}', [UserGroupController::class, 'showMyFiles']);
+        Route::get('/groups/showMyFiles/{group_id}', [UserGroupController::class, 'showMyFiles']); //** ? */
         });
 
     // ADMIN
